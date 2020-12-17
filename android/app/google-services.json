@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "357008534788",
+    "firebase_url": "https://gscan-322b1.firebaseio.com",
+    "project_id": "gscan-322b1",
+    "storage_bucket": "gscan-322b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357008534788:android:949e727830c2006b98f451",
+        "android_client_info": {
+          "package_name": "com.gscan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357008534788-28fdv9qaa1djttui4f6lhe0aoh4e0c9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC87AwaYbDomwhb_yRqzmasZbYUxGLhRgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357008534788-28fdv9qaa1djttui4f6lhe0aoh4e0c9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
