@@ -52,11 +52,13 @@ class DisplayGuests extends Component{
             'The guest and all dependant data will be deleted.',[
                 {
                     text:"Confirm",
-                    onPress:()=>{this.deleteUsers()}
+                    onPress:()=>{this.deleteUsers()},
+                    style:'destructive'
                 },
                 {
                     text:"Go Back",
                     onPress:()=>{},
+                    style:'cancel'
 
                 }
             ],

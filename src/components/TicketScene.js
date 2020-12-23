@@ -60,13 +60,20 @@ class TicketScene extends Component{
           .catch((error)=>console.error("Oops, snapshot failed", error))
     }
 
+    sendInvite=()=>{
+        const {navigation,route}=this.props
+        const {item,detail}=route.params
+        Share.open({
+            title:"Guesture Scan Invite",
+            message:`Hey ${item.name}!,\n\nThank you for registering for our event - ${detail.name}.Your guest ID is ${item.qrnum}.Scan your ticket at the venue to check-in.Looking forward to have you onboard!\n\nThis event is managed on Guesture Scan.Click on the link below to download the app now and start organizing your events!\n\nhttps://play.google.com/store/apps/details?id=com.gscan`
+        })
+    }
+
 
     componentDidMount(){
         const {navigation,route}=this.props
         const {item,detail}=route.params
         BackHandler.addEventListener('hardwareBackPress', function() {return true})
-       
-      
         navigation.setOptions({
            title:"Entry Ticket",
            headerTitleStyle:{
@@ -95,7 +102,7 @@ class TicketScene extends Component{
                     size={26}
                   />}
                 >
-                <MenuItem  style={{maxWidth:'auto',padding:5}}  onPress={this.hideMenu}>
+                <MenuItem  style={{maxWidth:'auto',padding:5}}  onPress={this.sendInvite}>
                    
                       <View style={{maxWidth:'auto',flexDirection:'row'}}>
                         <MaterialCommunityIcons
